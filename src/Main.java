@@ -35,7 +35,6 @@ public class Main {
             System.out.println("Год " + year + " , численность" +
                     " населения составляет " + population);
         }
-
         System.out.println("Задача 4");
         int monthB = 0;
         int salaryB = 15000;
@@ -48,49 +47,39 @@ public class Main {
             System.out.println("Месяц " + monthB + " , сумма " +
                     "накоплений равна " + totalB + " рублей");
         }
-        /* Исправил что смог , понимаю что переменные одни и те же ,
-        но как их использовать во всех заданиях объявив один раз не понимаю
-        перепробывал все , задания просто перестают выполняться .
-        Дайте подсказку.
+        /* Разобрался , я молодец!!!
          */
             System.out.println("Задача 5");
         int monthB6 = 0;
-        int salaryB6 = 15000;
         int totalB6 = 0;
-        int percent6 = 7 ;
             while (totalB6 <= 12_000_000) {
-                totalB6 += totalB6 * percent6 / 100 / 12;
-                totalB6 += salaryB6;
+                totalB6 += totalB6 * percent / 100 / 12;
+                totalB6 += salaryB;
                 monthB6++;
             if (monthB6 % 6 == 0) {
                 System.out.println("Месяц " + monthB6 + " , сумма " +
                         "накоплений равна " + totalB6 + " рублей");
             }
         }
-
        System.out.println("Задача 6");
-        int monthB9 = 0;
-        int salaryB9 = 15000;
+
         int totalB9 = 0;
-        int percent9 = 7 ;
+        int monthB9 = 0;
         while (monthB9 <= 108 ) {
-            totalB9 += totalB9 * percent9 / 100 /12;
-            totalB9 +=  salaryB9;
+            totalB9 += totalB * percent / 100 /12;
+            totalB9 +=  salaryB;
             monthB9++;
                     if (monthB9 % 6 == 0) {
                     System.out.println("Cумма накоплений" +
                             " каждые пол года равна " + totalB9 + " рублей");
                 }
-
             }
-
             System.out.println("Задача 7");
 
         for (int day = 6; day <= 31; day = day + 7) {
             System.out.println("Сегодня пятница," + day+"-е число. " +
                     "Необходимо подготовить отчет");
         }
-
             System.out.println("Задача 8");
         int yearComet = 2024 ;
         int before = yearComet - 200 ;
@@ -99,7 +88,6 @@ public class Main {
                 System.out.println(before);
             before = before + 79 ;
         }
-
-            System.out.println("THE END");
+                System.out.println("THE END");
         }
     }
